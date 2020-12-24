@@ -10,13 +10,13 @@ MAINTAINER=	y@trombik.org
 COMMENT=	2D irregular bin packaging and nesting library
 
 LICENSE=	LGPL3
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 	libpolyclipping.so:graphics/polyclipping \
 	libnlopt.so:math/nlopt
 
-USE=	python:3.6+ cmake
+USES=	cmake
 USE_GITHUB=	yes
 GH_TUPLE=	Ultimaker:libnest2d:4d6fb4d
 

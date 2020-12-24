@@ -1,0 +1,23 @@
+# $FreeBSD$
+
+# XXX ultimaker forked libnest2d, and never upstreamed patches
+PORTNAME=	libnest2d-ultimaker
+DISTVERSION=	0.4
+PORTEPOCH=	20201010
+CATEGORIES=	devel
+
+MAINTAINER=	y@trombik.org
+COMMENT=	2D irregular bin packaging and nesting library
+
+LICENSE=	LGPL3
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
+	libpolyclipping.so:graphics/polyclipping \
+	libnlopt.so:math/nlopt
+
+USE=	python:3.6+ cmake
+USE_GITHUB=	yes
+GH_TUPLE=	Ultimaker:libnest2d:4d6fb4d
+
+.include <bsd.port.mk>

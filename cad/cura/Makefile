@@ -21,12 +21,12 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		qt5-graphicaleffects>0:graphics/qt5-graphicaleffects \
 		qt5-quickcontrols>0:x11-toolkits/qt5-quickcontrols \
 		qt5-quickcontrols2>0:x11-toolkits/qt5-quickcontrols2 \
-		Uranium>0:cad/uranium \
-		libCharon>0:net/libcharon \
-		CuraEngine>0,1:cad/cura-engine \
-		fdm_materials>0,1:cad/fdm_materials \
+		Uranium>=${DISTVERSION}:cad/uranium \
+		libCharon>=${DISTVERSION}:net/libcharon \
+		CuraEngine>=${DISTVERSION}:cad/cura-engine \
+		fdm_materials>=${DISTVERSION}:cad/fdm_materials \
 		${PYTHON_PKGNAMEPREFIX}trimesh>0:devel/py-trimesh@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pynest2d>0:devel/py-pynest2d
+		${PYTHON_PKGNAMEPREFIX}pynest2d>=${DISTVERSION}:devel/py-pynest2d
 LIB_DEPENDS=	libArcus.so:net/libarcus \
 		libSavitar.so:devel/libsavitar
 

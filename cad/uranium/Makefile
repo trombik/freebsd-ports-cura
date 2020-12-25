@@ -2,7 +2,6 @@
 
 PORTNAME=	Uranium
 DISTVERSION=	4.8.0
-# XXX PORTEPOCH should be removed when new version is released
 PORTEPOCH=	2
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker

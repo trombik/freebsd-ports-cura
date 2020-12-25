@@ -2,6 +2,7 @@
 
 PORTNAME=	fdm_materials
 DISTVERSION=	4.8.0
+PORTEPOCH=	1
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker
 

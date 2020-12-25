@@ -2,7 +2,6 @@
 
 PORTNAME=		CuraEngine
 DISTVERSION=		4.8.0
-# XXX PORTEPOCH should be removed in next release
 PORTEPOCH=		2
 CATEGORIES=		cad
 DIST_SUBDIR=		Ultimaker

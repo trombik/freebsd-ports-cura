@@ -1,13 +1,10 @@
 # $FreeBSD$
 
 # XXX ultimaker forked libnest2d, and never upstreamed patches
+# includes commits since tag 0.4
 PORTNAME=	libnest2d-ultimaker
 DISTVERSION=	0.4
 CATEGORIES=	devel
-
-# commits from the last tag, 0.4 to master
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/compare/
-PATCHFILES=	85d66c7a3b89cbd1eba61251b135d968b92bedd9...4d6fb4d3919aad653cbae0ae2e03c0e1ac00c64b.patch
 
 MAINTAINER=	y@trombik.org
 COMMENT=	2D irregular bin packaging and nesting library

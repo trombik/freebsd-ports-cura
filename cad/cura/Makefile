@@ -39,10 +39,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker
 GH_TAGNAME=	58bae31
 NO_ARCH=	yes
+SHEBANG_FILES=	cura_app.py
 
 post-patch:
-	${REINPLACE_CMD} -e 's|%%PYTHON_CMD%%|${PYTHON_CMD}|' \
-		${WRKSRC}/cura_app.py
 	${REINPLACE_CMD} -e 's|%%DISTVERSION%%|${DISTVERSION}|' \
 		${WRKSRC}/CMakeLists.txt
 

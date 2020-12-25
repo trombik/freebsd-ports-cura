@@ -41,7 +41,7 @@ GH_TAGNAME=	58bae31
 NO_ARCH=	yes
 SHEBANG_FILES=	cura_app.py
 
-post-patch:
+pre-configure:
 	${REINPLACE_CMD} -e 's|%%DISTVERSION%%|${DISTVERSION}|' \
 		${WRKSRC}/CMakeLists.txt
 

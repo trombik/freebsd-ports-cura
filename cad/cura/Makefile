@@ -43,5 +43,7 @@ NO_ARCH=	yes
 post-patch:
 	${REINPLACE_CMD} -e 's|%%PYTHON_CMD%%|${PYTHON_CMD}|' \
 		${WRKSRC}/cura_app.py
+	${REINPLACE_CMD} -e 's|%%DISTVERSION%%|${DISTVERSION}|' \
+		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

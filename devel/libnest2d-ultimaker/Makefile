@@ -1,7 +1,7 @@
 # XXX ultimaker forked libnest2d, and never upstreamed patches
 # includes commits since tag 0.4
 PORTNAME=	libnest2d-ultimaker
-DISTVERSION=	0.4
+DISTVERSION=	4.11.0
 CATEGORIES=	devel
 
 MAINTAINER=	y@trombik.org
@@ -16,6 +16,6 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 
 USES=	cmake
 USE_GITHUB=	yes
-GH_TUPLE=	Ultimaker:libnest2d:4d6fb4d
+GH_TUPLE=	Ultimaker:libnest2d:${DISTVERSION}
 
 .include <bsd.port.mk>

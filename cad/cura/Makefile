@@ -1,5 +1,5 @@
 PORTNAME=	Cura
-DISTVERSION=	4.10.0
+DISTVERSION=	4.11.0
 PORTEPOCH=	2
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker
@@ -26,7 +26,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		CuraEngine>=${DISTVERSION}:cad/cura-engine \
 		fdm_materials>=${DISTVERSION}:cad/fdm_materials \
 		${PYTHON_PKGNAMEPREFIX}trimesh>0:devel/py-trimesh@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pynest2d>=${DISTVERSION}:devel/py-pynest2d@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pynest2d>=${DISTVERSION}:devel/py-pynest2d@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}keyring>0:security/py-keyring@${PY_FLAVOR}
 
 LIB_DEPENDS=	libArcus.so:net/libarcus \
 		libSavitar.so:devel/libsavitar

@@ -1,6 +1,6 @@
 PORTNAME=	fdm_materials
 PORTEPOCH=	1
-DISTVERSION=	4.10.0
+DISTVERSION=	4.11.0
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker
 
@@ -10,7 +10,7 @@ COMMENT=	FDM Material database for 3D printers
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake 
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker

@@ -1,8 +1,6 @@
-# $FreeBSD: head/cad/uranium/Makefile 557300 2020-12-08 20:03:07Z lbartoletti $
-
 PORTNAME=	Uranium
-DISTVERSION=	4.8.0
-PORTEPOCH=	2
+DISTVERSION=	4.10.0
+PORTEPOCH=	1
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker
 
@@ -21,7 +19,6 @@ USES=		cmake gettext python:3.5+ pyqt:5
 USE_PYQT=	quick
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker
-GH_TAGNAME=	d752cb0
 STRIP=
 NO_ARCH=	yes
 

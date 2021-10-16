@@ -1,7 +1,6 @@
-# $FreeBSD: head/net/libarcus/Makefile 557300 2020-12-08 20:03:07Z lbartoletti $
-
 PORTNAME=	libArcus
-PORTVERSION=	4.8.0
+DISTVERSION=	4.10.0
+PORTEPOCH=	1
 CATEGORIES=	net cad
 DIST_SUBDIR=	Ultimaker
 
@@ -18,6 +17,7 @@ USE_PYQT=	sip pysip
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker
 USE_LDCONFIG=	yes
-GH_TAGNAME=	3afb644
 
+CMAKE_ARGS+=	-DPYTHON_EXECUTABLE:STRING=${PYTHON_CMD} \
+				-DPYTHON_INCLUDEDIR:STRING=${PYTHON_INCLUDEDIR}
 .include <bsd.port.mk>

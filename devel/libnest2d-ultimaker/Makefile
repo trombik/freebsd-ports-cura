@@ -14,7 +14,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 	libpolyclipping.so:graphics/polyclipping \
 	libnlopt.so:math/nlopt
 
-USES=	cmake
+USES=	cmake gettext-runtime
 USE_GITHUB=	yes
 GH_TUPLE=	Ultimaker:libnest2d:${DISTVERSION}
 

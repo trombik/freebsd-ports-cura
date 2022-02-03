@@ -1,5 +1,6 @@
 PORTNAME=	Cura
-DISTVERSION=	4.10.0
+DISTVERSION=	4.8.0
+PORTREVISION=	7
 PORTEPOCH=	2
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker
@@ -10,9 +11,7 @@ COMMENT=	Slicing application for 3D printers
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-# XXX use ">=${DISTVERSION}" for packages maintained by Ultimaker. DISTVERSION
-# of cura and these packages must match.
-BUILD_DEPENDS=	Uranium>=${DISTVERSION}:cad/uranium
+BUILD_DEPENDS=	Uranium>0,1:cad/uranium
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyserial>0:comms/py-pyserial@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Shapely>0:devel/py-shapely@${PY_FLAVOR} \
@@ -20,7 +19,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		qt5-graphicaleffects>0:graphics/qt5-graphicaleffects \
 		qt5-quickcontrols>0:x11-toolkits/qt5-quickcontrols \
 		qt5-quickcontrols2>0:x11-toolkits/qt5-quickcontrols2 \
-		${PYTHON_PKGNAMEPREFIX}qt5-svg>0:graphics/py-qt5-svg \
 		Uranium>=${DISTVERSION}:cad/uranium \
 		libCharon>=${DISTVERSION}:net/libcharon \
 		CuraEngine>=${DISTVERSION}:cad/cura-engine \
@@ -33,11 +31,12 @@ LIB_DEPENDS=	libArcus.so:net/libarcus \
 
 USES=		cmake gettext shebangfix python:3.5+ pyqt:5 \
 		desktop-file-utils shared-mime-info
-USE_PYQT=	gui widgets qml
+USE_PYQT=	pyqt5
 CMAKE_ARGS+=	-DURANIUM_SCRIPTS_DIR:STRING="${LOCALBASE}/share/uranium/scripts" \
 	-DCURA_VERSION=${DISTVERSION}
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker
+GH_TAGNAME=	58bae31
 NO_ARCH=	yes
 SHEBANG_FILES=	cura_app.py
 

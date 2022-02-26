@@ -1,10 +1,10 @@
-# XXX ultimaker forked libnest2d, and never upstreamed patches
-# includes commits since tag 0.4
 PORTNAME=	libnest2d-ultimaker
-DISTVERSION=	4.11.0
+# XXX there is no 4.13.1
+# https://github.com/Ultimaker/libnest2d/tags
+DISTVERSION=	4.12.0
 CATEGORIES=	devel
 
-MAINTAINER=	y@trombik.org
+MAINTAINER=	db@FreeBSD.org
 COMMENT=	2D irregular bin packaging and nesting library
 
 LICENSE=	LGPL3
@@ -14,8 +14,9 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 	libpolyclipping.so:graphics/polyclipping \
 	libnlopt.so:math/nlopt
 
-USES=	cmake gettext-runtime
+USES=	cmake
 USE_GITHUB=	yes
-GH_TUPLE=	Ultimaker:libnest2d:${DISTVERSION}
+GH_ACCOUNT=	Ultimaker
+GH_PROJECT=	libnest2d
 
 .include <bsd.port.mk>

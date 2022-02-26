@@ -1,5 +1,7 @@
 PORTNAME=	libCharon
-DISTVERSION=	4.11.0
+# XXX there is no 4.13.1
+# https://github.com/Ultimaker/libCharon/tags
+DISTVERSION=	4.13.0
 CATEGORIES=	net devel cad
 DIST_SUBDIR=	Ultimaker
 

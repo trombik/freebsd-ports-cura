@@ -1,6 +1,6 @@
 PORTNAME=		CuraEngine
-DISTVERSION=	4.11.0
 PORTEPOCH=		1
+DISTVERSION=		4.13.1
 CATEGORIES=		cad
 DIST_SUBDIR=		Ultimaker
 
@@ -14,7 +14,6 @@ LIB_DEPENDS=	libArcus.so:net/libarcus	\
 
 USES=		compiler:c++11-lang cmake
 
-# see cmake/FindStb.cmake
 STB_TAG=	d5d052c
 
 USE_GITHUB=	yes
@@ -26,9 +25,5 @@ CMAKE_ARGS+=	-DStb_FOUND:BOOL=ON		\
 		-DStb_INCLUDE_DIRS=${WRKSRC}/include
 
 PLIST_FILES=	bin/CuraEngine
-
-pre-configure:
-	${REINPLACE_CMD} -e 's|%%DISTVERSION%%|${DISTVERSION}|g' \
-		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

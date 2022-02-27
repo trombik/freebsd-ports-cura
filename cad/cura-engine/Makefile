@@ -24,6 +24,10 @@ GH_TUPLE=	nothings:stb:${STB_TAG}:stb/include/stb
 CMAKE_ARGS+=	-DStb_FOUND:BOOL=ON		\
 		-DStb_INCLUDE_DIRS=${WRKSRC}/include
 
+# disable OpenMP as it does not work (at least) on CURRENT.
+# OpenMP support is planned to be replaced with native thread.
+CMAKE_ARGS+=	-DENABLE_OPENMP:BOOL=OFF
+
 PLIST_FILES=	bin/CuraEngine
 
 .include <bsd.port.mk>

@@ -25,6 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		fdm_materials>=4.13.0:cad/fdm_materials \
 		${PYTHON_PKGNAMEPREFIX}trimesh>0:devel/py-trimesh@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pynest2d>=4.12.1:devel/py-pynest2d@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sentry-sdk>0:devel/py-sentry-sdk@${PY_FLAVOR} \
 		libArcus>=${DISTVERSION}:net/libarcus \
 		libSavitar>=${DISTVERSION}:devel/libsavitar
 LIB_DEPENDS=	libArcus.so:net/libarcus \

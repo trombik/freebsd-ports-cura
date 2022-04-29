@@ -26,7 +26,7 @@ CMAKE_ARGS+=	-DStb_FOUND:BOOL=ON		\
 
 # disable OpenMP as it does not work (at least) on CURRENT.
 # OpenMP support is planned to be replaced with native thread.
-CMAKE_ARGS+=	-DENABLE_OPENMP:BOOL=OFF
+# see files/patch-CMakeLists.txt
 
 PLIST_FILES=	bin/CuraEngine
 

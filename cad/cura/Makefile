@@ -25,6 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}trimesh>0:devel/py-trimesh@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pynest2d>=5.3.0:devel/py-pynest2d@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sentry-sdk>0:devel/py-sentry-sdk@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}typing-extensions>0:devel/py-typing-extensions@${PY_FLAVOR} \
 		libArcus>=5.3.0:net/libarcus \
 		libSavitar>=5.3.0:devel/libsavitar
 LIB_DEPENDS=	libArcus.so:net/libarcus \

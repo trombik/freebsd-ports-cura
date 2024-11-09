@@ -1,7 +1,7 @@
 PORTNAME=	Cura
-DISTVERSION=	5.7.0
+DISTVERSION=	5.8.1
 PORTEPOCH=	2
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	cad
 DIST_SUBDIR=	Ultimaker
 
@@ -25,6 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}trimesh>0:devel/py-trimesh@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pynest2d>=5.3.0:devel/py-pynest2d@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sentry-sdk>0:devel/py-sentry-sdk@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}typing-extensions>0:devel/py-typing-extensions@${PY_FLAVOR} \
 		libArcus>=5.3.0:net/libarcus \
 		libSavitar>=5.3.0:devel/libsavitar
 LIB_DEPENDS=	libArcus.so:net/libarcus \

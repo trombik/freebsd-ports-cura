@@ -116,7 +116,7 @@ jobs:
 
       - name: Download packages
         id: download-packages
-        uses: trombik/action-download-artifact@2328d7f66a27e1a72d338ad7ebeb7b6ee4852e90
+        uses: trombik/action-download-artifact@1e9a094d6d069ec9b27fe05d9f540a61c4912d53
         with:
 
           # download packages cache from previous workflow run
